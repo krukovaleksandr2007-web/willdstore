@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты и реквизиты | willdstore</title>
+  <meta name="description"
+    content="Контакты интернет-магазина willdstore: телефон, email, Telegram, адрес, время работы, реквизиты ИП/ООО. Форма обратной связи.">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <style> body { opacity: 1; } </style>
+
+  <!-- Schema.org: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ClothingStore",
+    "name": "willdstore",
+    "url": "https://willdstore.ru",
+    "telephone": "+7-800-555-35-35",
+    "email": "info@willdstore.ru",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "[ВСТАВИТЬ АДРЕС]",
+      "addressLocality": "Москва",
+      "addressCountry": "RU"
+    },
+    "openingHours": "Mo-Su 09:00-21:00"
+  }
+  </script>
+</head>
+<body class="is-loaded">
+
+<!-- ── Шапка ── -->
+<header class="header" role="banner">
+  <div class="container header__inner">
+    <a href="index.html" class="header__logo" aria-label="willdstore — главная">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+        <rect width="34" height="34" rx="9" fill="#6c3bff"/>
+        <path d="M7 9l4 12 6-9 6 9 4-12" stroke="#fff" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      willd<span class="header__logo-accent">store</span>
+    </a>
+    <nav class="header__nav" aria-label="Основная навигация">
+      <a href="index.html#/" class="nav__link">Главная</a>
+      <a href="index.html#/catalog" class="nav__link">Каталог</a>
+      <a href="contacts.html" class="nav__link is-active" aria-current="page">Контакты</a>
+    </nav>
+    <div class="header__actions">
+      <a href="index.html#/cart" class="header__btn" aria-label="Корзина">
+        <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+      </a>
+      <a href="index.html#/account" class="header__btn" aria-label="Личный кабинет">
+        <i class="fas fa-user" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ── Основной контент ── -->
+<main class="legal-page" role="main">
+  <div class="container">
+
+    <div class="legal-header">
+      <a href="index.html" class="legal-header__back">
+        <i class="fas fa-arrow-left" aria-hidden="true"></i> Вернуться в магазин
+      </a>
+      <h1>Контакты</h1>
+      <p style="color:var(--text-muted)">Мы на связи ежедневно с 9:00 до 21:00</p>
+    </div>
+
+    <!-- Сетка: каналы связи + форма -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start">
+
+      <!-- ── Левая колонка: контакты ── -->
+      <section aria-labelledby="contacts-heading">
+        <h2 id="contacts-heading"
+          style="font-size:1.2rem;margin-bottom:24px">Свяжитесь с нами</h2>
+
+        <!-- Карточки контактов -->
+        <div style="display:flex;flex-direction:column;gap:16px">
+
+          <!-- Телефон -->
+          <a href="tel:+78005553535" class="contacts-card"
+            aria-label="Позвонить: плюс 7 800 555 35 35">
+            <div class="contacts-card__icon" style="background:#e8f5e9;color:#16a34a">
+              <i class="fas fa-phone" aria-hidden="true"></i>
+            </div>
+            <div>
+              <p class="contacts-card__label">Телефон (бесплатно)</p>
+              <p class="contacts-card__value">+7 (800) 555-35-35</p>
+              <p class="contacts-card__note">Пн–Вс, 9:00–21:00</p>
+            </div>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:info@willdstore.ru" class="contacts-card"
+            aria-label="Написать письмо на info собака willdstore.ru">
+            <div class="contacts-card__icon" style="background:#ede8ff;color:#6c3bff">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+            </div>
+            <div>
+              <p class="contacts-card__label">Email</p>
+              <p class="contacts-card__value">info@willdstore.ru</p>
+              <p class="contacts-card__note">Ответим в течение часа</p>
+            </div>
+          </a>
+
+          <!-- Telegram -->
+          <a href="https://t.me/willdstore_support" target="_blank"
+            rel="noopener noreferrer" class="contacts-card"
+            aria-label="Написать в Telegram @willdstore_support">
+            <div class="contacts-card__icon" style="background:#e0f2fe;color:#0284c7">
+              <i class="fab fa-telegram" aria-hidden="true"></i>
+            </div>
+            <div>
+              <p class="contacts-card__label">Telegram (быстро)</p>
+              <p class="contacts-card__value">@willdstore_support</p>
+              <p class="contacts-card__note">Отвечаем за 15 минут</p>
+            </div>
+          </a>
+
+          <!-- WhatsApp -->
+          <a href="https://wa.me/78005553535" target="_blank"
+            rel="noopener noreferrer" class="contacts-card"
+            aria-label="Написать в WhatsApp">
+            <div class="contacts-card__icon" style="background:#dcfce7;color:#16a34a">
+              <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            </div>
+            <div>
+              <p class="contacts-card__label">WhatsApp</p>
+              <p class="contacts-card__value">+7 (800) 555-35-35</p>
+              <p class="contacts-card__note">Пн–Вс, 9:00–21:00</p>
+            </div>
+          </a>
+
+          <!-- Адрес -->
+          <div class="contacts-card contacts-card--static">
+            <div class="contacts-card__icon" style="background:#fff3e0;color:#ea580c">
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            </div>
+            <div>
+              <p class="contacts-card__label">Адрес пункта выдачи</p>
+              <p class="contacts-card__value">
+                <span class="placeholder">[ВСТАВИТЬ АДРЕС ПУНКТА ВЫДАЧИ]</span>
+              </p>
+              <p class="contacts-card__note">
+                <span class="placeholder">[ВСТАВИТЬ ЧАСЫ РАБОТЫ ПУНКТА ВЫДАЧИ]</span>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Соцсети -->
+        <div style="margin-top:28px">
+          <p style="font-weight:700;font-size:.9rem;margin-bottom:12px">Мы в соцсетях</p>
+          <div style="display:flex;gap:10px">
+            <a href="https://vk.com/willdstore" target="_blank" rel="noopener noreferrer"
+              class="footer__social" style="width:44px;height:44px;font-size:1.1rem;background:var(--bg-muted);color:var(--text)"
+              aria-label="ВКонтакте">
+              <i class="fab fa-vk" aria-hidden="true"></i>
+            </a>
+            <a href="https://t.me/willdstore" target="_blank" rel="noopener noreferrer"
+              class="footer__social" style="width:44px;height:44px;font-size:1.1rem;background:var(--bg-muted);color:var(--text)"
+              aria-label="Telegram-канал">
+              <i class="fab fa-telegram" aria-hidden="true"></i>
+            </a>
+            <a href="https://instagram.com/willdstore" target="_blank" rel="noopener noreferrer"
+              class="footer__social" style="width:44px;height:44px;font-size:1.1rem;background:var(--bg-muted);color:var(--text)"
+              aria-label="Instagram">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Правая колонка: форма ── -->
+      <section aria-labelledby="feedback-heading">
+        <div class="contact-form-wrap">
+          <h2 id="feedback-heading"
+            style="font-size:1.2rem;margin-bottom:20px">Форма обратной связи</h2>
+          <form
+            id="contact-form"
+            onsubmit="sendContactForm(event)"
+            novalidate
+            aria-label="Форма обратной связи">
+
+            <div class="form-group" style="margin-bottom:14px">
+              <label class="form-label" for="cf-name">Ваше имя *</label>
+              <input class="form-input" id="cf-name" name="name" type="text"
+                required placeholder="Иван Иванов"
+                autocomplete="name" aria-required="true">
+              <span class="form-error" id="cf-err-name" role="alert"></span>
+            </div>
+
+            <div class="form-group" style="margin-bottom:14px">
+              <label class="form-label" for="cf-email">Email *</label>
+              <input class="form-input" id="cf-email" name="email" type="email"
+                required placeholder="email@example.com"
+                autocomplete="email" aria-required="true">
+              <span class="form-error" id="cf-err-email" role="alert"></span>
+            </div>
+
+            <div class="form-group" style="margin-bottom:14px">
+              <label class="form-label" for="cf-phone">Телефон</label>
+              <input class="form-input" id="cf-phone" name="phone" type="tel"
+                placeholder="+7 (900) 000-00-00"
+                pattern="^[+]?[78][\s\-]?[(]?\d{3}[)]?[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$"
+                autocomplete="tel">
+            </div>
+
+            <div class="form-group" style="margin-bottom:14px">
+              <label class="form-label" for="cf-subject">Тема</label>
+              <select class="form-input catalog-sort" id="cf-subject" name="subject"
+                aria-label="Тема обращения">
+                <option value="order">Вопрос по заказу</option>
+                <option value="return">Возврат/обмен</option>
+                <option value="product">Вопрос о товаре</option>
+                <option value="delivery">Доставка</option>
+                <option value="other">Другое</option>
+              </select>
+            </div>
+
+            <div class="form-group" style="margin-bottom:20px">
+              <label class="form-label" for="cf-message">Сообщение *</label>
+              <textarea class="form-input form-input--textarea"
+                id="cf-message" name="message" rows="5"
+                required placeholder="Опишите ваш вопрос или проблему..."
+                aria-required="true"></textarea>
+              <span class="form-error" id="cf-err-message" role="alert"></span>
+            </div>
+
+            <!-- Согласие -->
+            <div style="margin-bottom:16px">
+              <label class="consent-label">
+                <input type="checkbox" id="cf-consent" name="consent" required
+                  aria-required="true">
+                <span style="font-size:.85rem">
+                  Согласен с
+                  <a href="privacy-policy.html" target="_blank" rel="noopener">
+                    Политикой конфиденциальности
+                  </a>
+                </span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">
+              <i class="fas fa-paper-plane" aria-hidden="true"></i>
+              Отправить сообщение
+            </button>
+
+            <!-- Статус отправки -->
+            <div id="cf-status" aria-live="polite" style="margin-top:12px"></div>
+          </form>
+        </div>
+      </section>
+
+    </div><!-- /grid -->
+
+    <!-- ── Реквизиты ── -->
+    <section style="margin-top:56px" aria-labelledby="requisites-heading">
+      <h2 id="requisites-heading" style="font-size:1.3rem;margin-bottom:20px">
+        Реквизиты организации
+      </h2>
+      <div style="background:var(--bg-card);border:1px solid var(--border);
+        border-radius:var(--radius-lg);padding:24px;
+        display:grid;grid-template-columns:1fr 1fr;gap:16px 40px">
+
+        <div class="requisites-row">
+          <span class="requisites-label">Наименование</span>
+          <span class="requisites-value">
+            <span class="placeholder">[ВСТАВИТЬ НАИМЕНОВАНИЕ ИП/ООО]</span>
+          </span>
+        </div>
+        <div class="requisites-row">
+          <span class="requisites-label">ИНН</span>
+          <span class="requisites-value">
+            <span class="placeholder">[ВСТАВИТЬ ИНН]</span>
+          </span>
+        </div>
+        <div class="requisites-row">
+          <span class="requisites-label">ОГРН / ОГРНИП</span>
+          <span class="requisites-value">
+            <span class="placeholder">[ВСТАВИТЬ ОГРН]</span>
+          </span>
+        </div>
+        <div class="requisites-row">
+          <span class="requisites-label">КПП</span>
+          <span class="requisites-value">
+            <span class="placeholder">[ВСТАВИТЬ КПП или «Не применимо» для ИП]</span>
+          </span>
+        </div>
+        <div class="requisites-row">
+          <span class="requisites-label">Расчётный счёт</span>
+          <span class="requisites-value">
+            <span class="placeholder">[ВСТАВИТЬ Р/С]</span>
+          </span>
+        </div>
+        <div class="requisites-row">
+          <span class="requisites-label">Банк</span>
+          <span class="requisites-value">
+            <span class="placeholder">[ВСТАВИТЬ НАЗВАНИЕ БАНКА]</span>
+          </span>
+        </div>
+        <div class="requisites-row">
+          <span class="requisites-label">БИК</span>
+          <span class="requisites-value">
+            <span class="placeholder">[ВСТАВИТЬ БИК]</span>
+          </span>
+        </div>
+        <div class="requisites-row">
+          <span class="requisites-label">Кор. счёт</span>
+          <span class="requisites-value">
+            <span class="placeholder">[ВСТАВИТЬ КОР. СЧЁТ]</span>
+          </span>
+        </div>
+        <div class="requisites-row" style="grid-column:1/-1">
+          <span class="requisites-label">Юридический адрес</span>
+          <span class="requisites-value">
+            <span class="placeholder">[ВСТАВИТЬ ЮРИДИЧЕСКИЙ АДРЕС]</span>
+          </span>
+        </div>
+        <div class="requisites-row" style="grid-column:1/-1">
+          <span class="requisites-label">Фактический адрес</span>
+          <span class="requisites-value">
+            <span class="placeholder">[ВСТАВИТЬ ФАКТИЧЕСКИЙ АДРЕС / АДРЕС СКЛАДА]</span>
+          </span>
+        </div>
+        <div class="requisites-row">
+          <span class="requisites-label">Email</span>
+          <span class="requisites-value">
+            <a href="mailto:info@willdstore.ru">info@willdstore.ru</a>
+          </span>
+        </div>
+        <div class="requisites-row">
+          <span class="requisites-label">Телефон</span>
+          <span class="requisites-value">
+            <a href="tel:+78005553535">+7 (800) 555-35-35</a>
+          </span>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<!-- ── Подвал ── -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__bottom">
+      <p>© 2025 willdstore. Все права защищены.</p>
+      <nav class="footer__legal">
+        <a href="privacy-policy.html">Политика конфиденциальности</a>
+        <a href="public-offer.html">Публичная оферта</a>
+        <a href="return-policy.html">Возврат</a>
+        <a href="contacts.html">Реквизиты</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<style>
+  /* Стили специфичные для contacts.html */
+  .contacts-card {
+    display: flex; align-items: flex-start; gap: 14px;
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 16px;
+    transition: all var(--transition); color: var(--text);
+  }
+  .contacts-card:not(.contacts-card--static):hover {
+    border-color: var(--primary); box-shadow: var(--shadow);
+    transform: translateY(-2px);
+  }
+  .contacts-card__icon {
+    width: 44px; height: 44px; flex-shrink: 0;
+    border-radius: var(--radius-sm);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.1rem;
+  }
+  .contacts-card__label { font-size: .75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 3px; }
+  .contacts-card__value { font-weight: 700; font-size: .95rem; margin-bottom: 2px; }
+  .contacts-card__note  { font-size: .78rem; color: var(--text-muted); }
+
+  .contact-form-wrap {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius-lg); padding: 28px;
+  }
+
+  .requisites-row { display: flex; flex-direction: column; gap: 4px; }
+  .requisites-label { font-size: .75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: .06em; }
+  .requisites-value { font-weight: 600; font-size: .92rem; }
+
+  @media (max-width: 768px) {
+    main > .container > div[style*="grid-template-columns:1fr 1fr"] {
+      grid-template-columns: 1fr;
+    }
+    div[style*="grid-template-columns:1fr 1fr"].requisites-grid,
+    div.requisites-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width: 480px) {
+    .contact-form-wrap { padding: 18px; }
+  }
+</style>
+
+<script>
+  /**
+   * Валидация и отправка формы обратной связи.
+   * TODO: Supabase API — заменить console.log на:
+   *   await supabase.from('feedback').insert([formPayload])
+   */
+  function sendContactForm(e) {
+    e.preventDefault();
+    let valid = true;
+
+    const fields = [
+      { id: 'cf-name',    err: 'cf-err-name',    msg: 'Введите имя' },
+      { id: 'cf-email',   err: 'cf-err-email',   msg: 'Введите корректный email' },
+      { id: 'cf-message', err: 'cf-err-message', msg: 'Напишите сообщение' }
+    ];
+
+    fields.forEach(({ id, err, msg }) => {
+      const inp   = document.getElementById(id);
+      const errEl = document.getElementById(err);
+      const ok    = inp?.validity?.valid && inp.value.trim().length > 0;
+      if (errEl) errEl.textContent = ok ? '' : msg;
+      if (inp)   inp.classList.toggle('is-error', !ok);
+      if (!ok)   valid = false;
+    });
+
+    if (!document.getElementById('cf-consent')?.checked) {
+      valid = false;
+    }
+
+    if (!valid) return;
+
+    const status = document.getElementById('cf-status');
+
+    // TODO: Supabase API
+    // const { error } = await supabase.from('feedback').insert([{
+    //   name: ..., email: ..., phone: ..., subject: ..., message: ...,
+    //   created_at: new Date().toISOString()
+    // }]);
+
+    status.innerHTML = `
+      <div style="background:#dcfce7;border:1px solid #86efac;border-radius:var(--radius);
+        padding:12px 16px;color:#14532d;display:flex;align-items:center;gap:10px">
+        <i class="fas fa-check-circle" aria-hidden="true"></i>
+        <span>Сообщение отправлено! Ответим в течение часа.</span>
+      </div>`;
+
+    e.target.reset();
+    e.target.querySelectorAll('.is-error').forEach(el => el.classList.remove('is-error'));
+  }
+</script>
+
+</body>
+</html>

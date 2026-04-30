@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+Disallow: /assets/
+Allow: /assets/images/
+
+# Запрещаем индексацию юридических страниц (дублирование контента)
+# Разрешаем — они уже помечены meta noindex, но явный запрет надёжнее
+
+# Ускоряем краулинг для Яндекса
+User-agent: Yandex
+Allow: /
+Crawl-delay: 2
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Sitemap
+Sitemap: https://willdstore.ru/sitemap.xml
