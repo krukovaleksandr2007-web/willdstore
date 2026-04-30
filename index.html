@@ -92,12 +92,11 @@
   <!-- ══ Styles ══ -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- FontAwesome 6.5 -->
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plh7eecyn6CpoEpsnBtXiGI0GOFA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer">
-
+<!-- FontAwesome 6.5 -->
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  referrerpolicy="no-referrer">
+  
   <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -106,11 +105,34 @@
 
   <!-- Критический CSS для первого экрана (предотвращает FOUC) -->
   <style>
-    body { opacity: 0; }
-    body.is-loaded { opacity: 1; transition: opacity .25s; }
-    .header { height: 68px; }
-    @media (max-width: 768px) { .header { height: 60px; } }
-    @media (max-width: 480px) { .header { height: 56px; } }
+  /* Показываем сайт сразу, даже если JS не загрузится */
+  body { 
+    opacity: 1; 
+    transition: opacity .25s;
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, sans-serif;
+    background: #0f0f1a;
+    color: #fff;
+  }
+  .header { height: 68px; }
+  @media (max-width: 768px) { .header { height: 60px; } }
+  @media (max-width: 480px) { .header { height: 56px; } }
+  
+  /* Анимация для уведомлений */
+  @keyframes slideIn { 
+    from { transform: translateX(100%); opacity: 0 } 
+    to { transform: translateX(0); opacity: 1 } 
+  }
+  #notifications { 
+    position: fixed; 
+    top: 20px; 
+    right: 20px; 
+    z-index: 9999; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+    pointer-events: none 
+  }
   </style>
 </head>
 <body>
@@ -322,6 +344,29 @@
 <script src="router.js"></script>
 <script src="ui.js"></script>
 <script src="app.js"></script>
-
+  <!-- Защита от вечной загрузки -->
+<script>
+  // Если через 3 секунды роутер не отрендерил контент — покажем заглушку
+  setTimeout(() => {
+    const app = document.getElementById('app');
+    if (app && (app.innerHTML.trim() === '' || app.innerHTML.includes('fa-circle-notch'))) {
+      console.warn('⚠️ Роутер не загрузился, показываем заглушку');
+      app.innerHTML = `
+        <div style="max-width:600px;margin:40px auto;padding:20px;text-align:center">
+          <h1>🛍 willdstore</h1>
+          <p>Каталог загружается... Если не появляется, попробуйте:</p>
+          <ul style="text-align:left;margin:20px 0">
+            <li>Обновить страницу (Ctrl+F5)</li>
+            <li>Очистить кэш браузера</li>
+            <li>Отключить расширения</li>
+          </ul>
+          <a href="#/catalog" style="display:inline-block;padding:12px 24px;background:#6c3bff;color:#fff;text-decoration:none;border-radius:8px;margin-top:10px">
+            Перейти в каталог
+          </a>
+        </div>
+      `;
+    }
+  }, 3000);
+</script>
 </body>
 </html>
