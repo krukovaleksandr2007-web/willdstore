@@ -6,14 +6,40 @@
   <title>Политика конфиденциальности | willdstore</title>
   <meta name="description" content="Политика конфиденциальности и обработки персональных данных интернет-магазина willdstore в соответствии с Федеральным законом №152-ФЗ.">
   <meta name="robots" content="noindex, follow">
-  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- ✅ Исправленные пути (с ведущим слэшем) -->
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    crossorigin="anonymous" referrerpolicy="no-referrer">
+    referrerpolicy="no-referrer">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
   <style>
-    body { opacity: 1; }
+    body { opacity: 1; margin: 0; font-family: Inter, system-ui, sans-serif; background: #0f0f1a; color: #fff; }
+    .legal-page { padding: 40px 0; min-height: 80vh; }
+    .legal-header { margin-bottom: 40px; padding-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .legal-header__back { display: inline-flex; align-items: center; gap: 8px; color: #6c3bff; text-decoration: none; margin-bottom: 16px; }
+    .legal-header__back:hover { text-decoration: underline; }
+    .legal-header h1 { margin: 0 0 8px; font-size: 2rem; }
+    .legal-header__date { color: rgba(255,255,255,0.6); font-size: 0.875rem; margin: 0; }
+    .legal-content { line-height: 1.7; color: rgba(255,255,255,0.9); }
+    .legal-content h2 { color: #6c3bff; margin: 32px 0 16px; font-size: 1.5rem; }
+    .legal-content p { margin: 12px 0; }
+    .legal-content ul, .legal-content ol { margin: 12px 0; padding-left: 24px; }
+    .legal-content li { margin: 8px 0; }
+    .legal-content a { color: #6c3bff; text-decoration: none; }
+    .legal-content a:hover { text-decoration: underline; }
+    .legal-content table { width: 100%; border-collapse: collapse; margin: 16px 0; background: rgba(255,255,255,0.05); border-radius: 8px; overflow: hidden; }
+    .legal-content th, .legal-content td { padding: 12px 16px; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .legal-content th { background: rgba(108,59,255,0.2); font-weight: 600; }
+    .legal-content tr:last-child td { border-bottom: none; }
+    .placeholder { background: rgba(239,68,68,0.2); color: #f87171; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+    @media (max-width: 768px) {
+      .legal-page { padding: 24px 16px; }
+      .legal-content table { font-size: 0.875rem; }
+      .legal-content th, .legal-content td { padding: 8px 12px; }
+    }
   </style>
 </head>
 <body class="is-loaded">
@@ -21,7 +47,7 @@
 <!-- Минималистичная шапка -->
 <header class="header" role="banner">
   <div class="container header__inner">
-    <a href="index.html" class="header__logo" aria-label="willdstore — главная">
+    <a href="/" class="header__logo" aria-label="willdstore — главная">
       <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
         <rect width="34" height="34" rx="9" fill="#6c3bff"/>
         <path d="M7 9l4 12 6-9 6 9 4-12" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -29,9 +55,9 @@
       willd<span class="header__logo-accent">store</span>
     </a>
     <nav class="header__nav" aria-label="Основная навигация">
-      <a href="index.html#/" class="nav__link">Главная</a>
-      <a href="index.html#/catalog" class="nav__link">Каталог</a>
-      <a href="contacts.html" class="nav__link">Контакты</a>
+      <a href="/#/" class="nav__link">Главная</a>
+      <a href="/#/catalog" class="nav__link">Каталог</a>
+      <a href="/contacts.html" class="nav__link">Контакты</a>
     </nav>
   </div>
 </header>
@@ -40,11 +66,11 @@
   <div class="container">
 
     <div class="legal-header">
-      <a href="index.html" class="legal-header__back">
+      <a href="/" class="legal-header__back">
         <i class="fas fa-arrow-left" aria-hidden="true"></i> Вернуться в магазин
       </a>
       <h1>Политика конфиденциальности</h1>
-      <p class="legal-header__date">Редакция от 1 января 2025 г. · Вступает в силу с момента публикации</p>
+      <p class="legal-header__date">Редакция от 30 апреля 2026 г. · Вступает в силу с момента публикации</p>
     </div>
 
     <article class="legal-content">
@@ -52,8 +78,8 @@
       <p>
         Настоящая Политика конфиденциальности (далее — «Политика») регулирует порядок обработки
         персональных данных пользователей интернет-магазина <strong>willdstore</strong>
-        (<span class="placeholder">[ВСТАВИТЬ URL САЙТА]</span>),
-        принадлежащего <span class="placeholder">[ВСТАВИТЬ НАИМЕНОВАНИЕ ИП/ООО]</span>
+        (https://willdstore.ru),
+        принадлежащего <strong>ИП Крюков Александр Сергеевич</strong>
         (далее — «Оператор»).
       </p>
       <p>
@@ -64,7 +90,7 @@
       <h2>1. Основные понятия</h2>
       <ul>
         <li><strong>Персональные данные</strong> — любая информация, относящаяся прямо или косвенно к определённому или определяемому физическому лицу (субъекту).</li>
-        <li><strong>Оператор</strong> — <span class="placeholder">[ВСТАВИТЬ НАИМЕНОВАНИЕ ИП/ООО]</span>, ИНН <span class="placeholder">[ВСТАВИТЬ ИНН]</span>, ОГРН <span class="placeholder">[ВСТАВИТЬ ОГРН]</span>.</li>
+        <li><strong>Оператор</strong> — ИП Крюков Александр Сергеевич, ИНН [ВСТАВИТЬ ИНН], ОГРНИП [ВСТАВИТЬ ОГРНИП].</li>
         <li><strong>Пользователь</strong> — любое физическое лицо, посещающее сайт или совершающее покупку.</li>
         <li><strong>Обработка</strong> — любое действие с персональными данными: сбор, запись, хранение, уточнение, использование, передача, удаление.</li>
       </ul>
@@ -137,10 +163,10 @@
       <h2>6. Передача данных третьим лицам</h2>
       <p>Мы можем передавать данные следующим категориям получателей:</p>
       <ul>
-        <li><strong>Платёжные системы</strong> — <span class="placeholder">[ВСТАВИТЬ НАЗВАНИЕ: ЮKassa / Robokassa]</span> для проведения оплаты.</li>
+        <li><strong>Платёжные системы</strong> — ЮKassa для проведения оплаты.</li>
         <li><strong>Службы доставки</strong> — СДЭК, Почта России, курьерские службы для организации доставки.</li>
         <li><strong>Аналитические сервисы</strong> — Яндекс.Метрика (с обезличиванием IP).</li>
-        <li><strong>Облачные хранилища</strong> — <span class="placeholder">[ВСТАВИТЬ: Supabase / иной облачный провайдер]</span> для хранения данных.</li>
+        <li><strong>Облачные хранилища</strong> — Supabase для хранения данных.</li>
       </ul>
       <p>Данные не продаются третьим лицам в коммерческих целях.</p>
 
@@ -165,7 +191,7 @@
       </ol>
       <p>
         Для реализации прав направьте запрос на email:
-        <a href="mailto:[ВСТАВИТЬ EMAIL]"><span class="placeholder">[ВСТАВИТЬ EMAIL]</span></a>
+        <a href="mailto:support@willdstore.ru">support@willdstore.ru</a>
         с темой «Персональные данные» и приложите копию документа, удостоверяющего личность.
         Срок ответа — 30 дней.
       </p>
@@ -180,11 +206,12 @@
 
       <h2>10. Ответственный за обработку данных</h2>
       <p>
-        <span class="placeholder">[ВСТАВИТЬ НАИМЕНОВАНИЕ ИП/ООО]</span>,<br>
-        ИНН: <span class="placeholder">[ВСТАВИТЬ ИНН]</span>,<br>
-        Юридический адрес: <span class="placeholder">[ВСТАВИТЬ ЮРИДИЧЕСКИЙ АДРЕС]</span>,<br>
-        Email: <a href="mailto:[ВСТАВИТЬ EMAIL]"><span class="placeholder">[ВСТАВИТЬ EMAIL]</span></a>,<br>
-        Телефон: <span class="placeholder">[ВСТАВИТЬ ТЕЛЕФОН]</span>.
+        <strong>ИП Крюков Александр Сергеевич</strong>,<br>
+        ИНН: [ВСТАВИТЬ ИНН],<br>
+        ОГРНИП: [ВСТАВИТЬ ОГРНИП],<br>
+        Юридический адрес: [ВСТАВИТЬ АДРЕС],<br>
+        Email: <a href="mailto:support@willdstore.ru">support@willdstore.ru</a>,<br>
+        Телефон: +7 (999) 123-45-67.
       </p>
 
       <h2>11. Изменения Политики</h2>
@@ -192,7 +219,7 @@
         Оператор оставляет за собой право вносить изменения в настоящую Политику.
         При существенных изменениях мы уведомим пользователей по email или через уведомление на сайте.
         Актуальная версия всегда доступна по адресу
-        <a href="privacy-policy.html">willdstore.ru/privacy-policy.html</a>.
+        <a href="/privacy-policy.html">willdstore.ru/privacy-policy.html</a>.
       </p>
 
     </article>
@@ -202,12 +229,12 @@
 <footer class="footer" role="contentinfo" style="margin-top:auto">
   <div class="container">
     <div class="footer__bottom">
-      <p>© 2025 willdstore. Все права защищены.</p>
+      <p>© 2026 willdstore. Все права защищены.</p>
       <nav class="footer__legal">
-        <a href="privacy-policy.html">Политика конфиденциальности</a>
-        <a href="public-offer.html">Публичная оферта</a>
-        <a href="return-policy.html">Возврат</a>
-        <a href="contacts.html">Реквизиты</a>
+        <a href="/privacy-policy.html">Политика конфиденциальности</a>
+        <a href="/public-offer.html">Публичная оферта</a>
+        <a href="/return-policy.html">Возврат</a>
+        <a href="/contacts.html">Реквизиты</a>
       </nav>
     </div>
   </div>
