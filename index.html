@@ -33,9 +33,9 @@
   <meta name="twitter:image"       content="https://willdstore.ru/assets/images/og-cover.jpg">
 
   <!-- ══ Favicon ══ -->
-  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
-  <link rel="icon" type="image/x-icon"  href="assets/images/favicon.ico">
-  <link rel="apple-touch-icon"          href="assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+  <link rel="icon" type="image/x-icon"  href="/assets/images/favicon.ico">
+  <link rel="apple-touch-icon"          href="/assets/images/apple-touch-icon.png">
   <meta name="theme-color" content="#6c3bff">
 
   <!-- ══ Schema.org: Organization + WebSite ══ -->
@@ -90,12 +90,12 @@
   </script>
 
   <!-- ══ Styles ══ -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/css/style.css">
 
-<!-- FontAwesome 6.5 -->
-<link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  referrerpolicy="no-referrer">
+  <!-- FontAwesome 6.5 -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    referrerpolicy="no-referrer">
   
   <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -156,7 +156,7 @@
     <nav class="header__nav" aria-label="Основная навигация">
       <a href="#/"        class="nav__link" aria-label="Главная">Главная</a>
       <a href="#/catalog" class="nav__link" aria-label="Каталог товаров">Каталог</a>
-      <a href="contacts.html" class="nav__link" aria-label="Контакты">Контакты</a>
+      <a href="/contacts.html" class="nav__link" aria-label="Контакты">Контакты</a>
     </nav>
 
     <!-- Поиск Desktop -->
@@ -226,7 +226,7 @@
   <a href="#/account" class="mobile-nav__link" onclick="closeMobileNav()">
     <i class="fas fa-user" aria-hidden="true"></i> Кабинет
   </a>
-  <a href="contacts.html" class="mobile-nav__link" onclick="closeMobileNav()">
+  <a href="/contacts.html" class="mobile-nav__link" onclick="closeMobileNav()">
     <i class="fas fa-envelope" aria-hidden="true"></i> Контакты
   </a>
   <div class="mobile-nav__search" role="search">
@@ -296,9 +296,9 @@
       <div class="footer__col">
         <p class="footer__col-title">Покупателям</p>
         <nav class="footer__col-links" aria-label="Информация для покупателей">
-          <a href="contacts.html">Доставка и оплата</a>
-          <a href="return-policy.html">Возврат</a>
-          <a href="public-offer.html">Публичная оферта</a>
+          <a href="/contacts.html">Доставка и оплата</a>
+          <a href="/return-policy.html">Возврат</a>
+          <a href="/public-offer.html">Публичная оферта</a>
           <a href="#/account">Личный кабинет</a>
         </nav>
       </div>
@@ -328,10 +328,10 @@
     <div class="footer__bottom">
       <p>© 2025 willdstore. Все права защищены.</p>
       <nav class="footer__legal" aria-label="Юридические документы">
-        <a href="privacy-policy.html">Политика конфиденциальности</a>
-        <a href="public-offer.html">Публичная оферта</a>
-        <a href="return-policy.html">Возврат</a>
-        <a href="contacts.html">Реквизиты</a>
+        <a href="/privacy-policy.html">Политика конфиденциальности</a>
+        <a href="/public-offer.html">Публичная оферта</a>
+        <a href="/return-policy.html">Возврат</a>
+        <a href="/contacts.html">Реквизиты</a>
       </nav>
     </div>
   </div>
@@ -339,11 +339,12 @@
 
 <!-- ════════════ СКРИПТЫ ════════════ -->
 <!-- Порядок строго: data → cart → router → ui → app -->
-<script src="data.js"></script>
-<script src="cart.js"></script>
-<script src="router.js"></script>
-<script src="ui.js"></script>
-<script src="app.js"></script>
+<script src="/js/data.js"></script>
+<script src="/js/cart.js"></script>
+<script src="/js/router.js"></script>
+<script src="/js/ui.js"></script>
+<script src="/js/app.js"></script>
+
   <!-- Защита от вечной загрузки -->
 <script>
   // Если через 3 секунды роутер не отрендерил контент — покажем заглушку
